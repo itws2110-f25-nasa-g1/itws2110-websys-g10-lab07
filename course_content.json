@@ -1,0 +1,116 @@
+{
+  "Websys_course" : {
+    "Lectures" : [
+      {
+        "Lecture 1" : {
+          "Title" : "L1: Introduction to Web Systems",
+          "Description" : "The lecture covered the course syllabus and schedule, as well as expectations for the course."
+        }
+      },
+      {
+        "Lecture 2" : {
+          "Title" : "L2: Basics",
+          "Description" : "This lecture was intended as a memory refresher and to go back to the basics. Topics covered included HTTP, the Internet, and servers."
+        }
+      },
+      {
+        "Lecture 3" : {
+          "Title" : "L3: CSS Part 1",
+          "Description" : "This lecture introduced the basics of Cascading Stylesheets (CSS) to prepare students to employ them in labs and the final project."
+        }
+      },
+      {
+        "Lecture 4" : {
+          "Title" : "L4: Finance Project Ideas",
+          "Description" : "This lecture focused on Dr. Raffi's ideas for the financial project. Students worked on a lab and preparing to begin the final project."
+        }
+      },
+      {
+        "Lecture 5" : {
+          "Title" : "L5: CSS Part 2",
+          "Description" : "This lecture continued the past lecture on CSS, going more in depth on combinators, animations, minification, and other aspects."
+        }
+      },
+      {
+        "Lecture 6" : {
+          "Title" : "L6: NASA Project Ideas",
+          "Description" : "This lecture, taking place on Constitution Day, focused on Dr. Assaf's presentation on the NASA project and the requirements for it."
+        }
+      },
+      {
+        "Lecture 1" : {
+          "Title" : "",
+          "Description" : ""
+        }
+      },
+      {
+        "Lecture 1" : {
+          "Title" : "",
+          "Description" : ""
+        }
+      },
+      {
+        "Lecture 1" : {
+          "Title" : "",
+          "Description" : ""
+        }
+      },
+      {
+        "Lecture 1" : {
+          "Title" : "",
+          "Description" : ""
+        }
+      },
+      {
+        "Lecture 1" : {
+          "Title" : "",
+          "Description" : ""
+        }
+      }
+    ],
+    "Labs" : [
+      {
+        "Lab1" : {
+          "Title" : "",
+          "Description" : ""
+        }
+      },
+      {
+        "Lab1" : {
+          "Title" : "",
+          "Description" : ""
+        }
+      },
+      {
+        "Lab1" : {
+          "Title" : "",
+          "Description" : ""
+        }
+      },
+      {
+        "Lab1" : {
+          "Title" : "",
+          "Description" : ""
+        }
+      },
+      {
+        "Lab1" : {
+          "Title" : "",
+          "Description" : ""
+        }
+      },
+      {
+        "Lab1" : {
+          "Title" : "",
+          "Description" : ""
+        }
+      },
+      {
+        "Lab1" : {
+          "Title" : "",
+          "Description" : ""
+        }
+      }
+    ]
+  }
+}
