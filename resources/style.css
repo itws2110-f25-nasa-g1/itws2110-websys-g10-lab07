@@ -1,0 +1,104 @@
+:root {
+  --primary-text: #000000;
+  --catseyegreen: #6bbb4f;
+  --catseyeblue: #34aedf;
+}
+
+.nunito-main {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+	font-family: "Nunito";
+}
+
+#header {
+  background: linear-gradient(135deg, var(--catseyegreen) 0%, var(--catseyeblue) 100%);
+  color: var(--secondary-text);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  z-index: 100;
+}
+
+.header_container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  flex-wrap: nowrap;
+}
+
+#header_left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.brand-link {
+  color: var(--primary-text);
+  font-weight: bold;
+  font-size: 2.0rem;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+}
+
+.nav-list li {
+  flex: 0 0 auto;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.login-button {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+}
+
+#login-button-object {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 5px;
+  border-width: 2px;
+}
+
+nav {
+  display: flex;
+  margin-top: 2em;
+}
