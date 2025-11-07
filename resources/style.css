@@ -52,14 +52,19 @@
   margin-left: 20px;
 }
 
-.flex-container {
+container-container {
+  display: block;
+  height: 100%;
+}
+
+flex-container {
   display: flex;
+  align-items: baseline;
 }
 
 nav {
   display: flex;
   width: fit-content;
-  margin-top: 2em;
   padding: 1em;
   border: 2px solid black;
 }
@@ -80,9 +85,8 @@ nav {
   display: inline-block;
 }
 
-.course-content {
-  display: flex;
-  width: fit-content;
+course-content {
+  flex: 1;
   padding: 1em;
   border: 2px solid black;
 }
