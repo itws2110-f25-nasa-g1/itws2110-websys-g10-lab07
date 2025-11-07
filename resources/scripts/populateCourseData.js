@@ -1,12 +1,26 @@
 $(document).ready(function () {
 	$.ajax({
 		type: 'GET',
-		url: '../jsons/course_content.json',
+		url: 'resources/jsons/course_content.json',
 		dataType: 'json',
 		// crawls json file for menu to place on project page
 		// note that this requires jQuery
 		success: function (responseData) {
-			$.each(responseData.Lectures, function () {
+			$('#nav-list').append(
+					"<h4>Lectures</h4>"
+			);
+
+			$.each(responseData.Websys_course.Lectures, function () {
+				$('#nav-list').append(
+					"<li><a href=''>" + this.Title + "</a></li>"
+				);
+			});
+
+			$('#nav-list').append(
+					"<h4>Labs</h4>"
+			);
+
+			$.each(responseData.Websys_course.Labs, function () {
 				$('#nav-list').append(
 					"<li><a href=''>" + this.Title + "</a></li>"
 				);
