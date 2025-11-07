@@ -14,5 +14,22 @@ WebSys Section 2 Group 10 Lab 7
    - Replacing `/path/to/` with either `./` or the full filepath
 6. Done!
 
+# SQL (maridb) commands
+- All creations were done in phpMyAdmin
+- Start
+  - use lab7;
+- 7:
+  - select * from students order by RIN;
+  - select * from students order by last_name;
+  - select * from students order by RCSID;
+  - select * from students order by first_name;
+- 8:
+  - select distinct s.RIN,s.first_name,s.last_name,s.addr_street,s.addr_city,s.addr_state,s.addr_zip from student
+s as s inner join grades on s.RIN = grades.RIN where grades.grade > 90;
+- 9:
+  - select crn,AVG(grade) from grades group by crn;
+- 10:
+  - select crn,count(*) from grades group by crn;
+
 # Credits
 Blackboard/LMS: blackboard_logo_white.png and favicon.png
