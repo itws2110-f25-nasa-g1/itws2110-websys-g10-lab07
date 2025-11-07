@@ -1,0 +1,36 @@
+{
+  "seapower_course" : {
+    "Lectures" : [
+      {
+        "Title" : "L1: 600 Ship Navy",
+        "Description" : "The lecture talked about the idea of a 600 Ship Navy"
+      },
+      {
+        "Title" : "L2: USS Barb",
+        "Description" : "This lecture focused on USS Barb, the only submarine to successfully sink a train."
+      },
+      {
+        "Title" : "L3: WW2",
+        "Description" : "The lecture went over World War 2 and what the Navy did during that time."
+      },
+      {
+        "Title" : "L4: Midway",
+        "Description" : "The lecture went over the Battle of Midway."
+      },
+      {
+        "Title" : "L5: The Missile Age",
+        "Description" : "This lecture talked about how naval combat has changed now that ships focus more on missiles than guns."
+      }
+    ],
+    "Labs" : [
+      {
+        "Title" : "Lab 1: Find a Hero",
+        "Description" : "Lab 1 was about finding a Medal of Honor recipient and writing about what they did."
+      },
+      {
+        "Title" : "Lab 2: Battleship",
+        "Description" : "Lab 2 was a giant game of battleship with the students commanding their ships."
+      }
+    ]
+  }
+}
