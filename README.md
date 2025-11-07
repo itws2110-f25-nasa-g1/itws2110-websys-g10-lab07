@@ -24,8 +24,12 @@ WebSys Section 2 Group 10 Lab 7
   - `select * from students order by RCSID;`
   - `select * from students order by first_name;`
 - 8:
-  - `select distinct s.RIN, s.first_name, s.last_name, s.addr_street, s.addr_city, s.addr_state, s.addr_zip from student
-s as s inner join grades on s.RIN = grades.RIN where grades.grade > 90;`
+  - ```
+    select distinct s.RIN, s.first_name, s.last_name, s.addr_street, s.addr_city, s.addr_state, s.addr_zip
+    from students as s
+    inner join grades on s.RIN = grades.RIN
+    where grades.grade > 90;
+    ```
 - 9:
   - `select crn, AVG(grade) from grades group by crn;`
 - 10:
