@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	$.ajax({
 		type: 'GET',
-		url: 'resources/jsons/course_content.json',
+		url: '../jsons/course_content.json',
 		dataType: 'json',
 		// crawls json file for menu to place on project page
 		// note that this requires jQuery
