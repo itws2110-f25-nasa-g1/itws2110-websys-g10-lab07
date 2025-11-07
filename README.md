@@ -33,3 +33,5 @@ s as s inner join grades on s.RIN = grades.RIN where grades.grade > 90;
 
 # Credits
 Blackboard/LMS: blackboard_logo_white.png and favicon.png
+
+Cobweb Background: Unsplash
