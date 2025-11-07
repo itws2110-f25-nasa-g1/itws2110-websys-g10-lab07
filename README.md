@@ -13,3 +13,6 @@ WebSys Section 2 Group 10 Lab 7
    - `sudo mariadb -p lab7 < /path/to/lab7.sql`
    - Replacing `/path/to/` with either `./` or the full filepath
 6. Done!
+
+# Credits
+Blackboard/LMS: blackboard_logo_white.png and favicon.png
