@@ -1,0 +1,92 @@
+{
+  "Websys_course" : {
+    "Lectures" : [
+      {
+        "Title" : "L1: Introduction to Web Systems",
+        "Description" : "The lecture covered the course syllabus and schedule, as well as expectations for the course."
+      },
+      {
+        "Title" : "L2: Basics",
+        "Description" : "This lecture was intended as a memory refresher and to go back to the basics. Topics covered included HTTP, the Internet, and servers."
+      },
+      {
+          "Title" : "L3: CSS Part 1",
+          "Description" : "This lecture introduced the basics of Cascading Stylesheets (CSS) to prepare students to employ them in labs and the final project."
+      },
+      {
+        "Title" : "L4: Finance Project Ideas",
+        "Description" : "This lecture focused on Dr. Raffi's ideas for the financial project. Students worked on a lab and preparing to begin the final project."
+      },
+      {
+        "Title" : "L5: CSS Part 2",
+        "Description" : "This lecture continued the past lecture on CSS, going more in depth on combinators, animations, minification, and other aspects."
+      },
+      {
+        "Title" : "L6: NASA Project Ideas",
+        "Description" : "This lecture, taking place on Constitution Day, focused on Dr. Assaf's presentation on the NASA project and the requirements for it."
+      },
+      {
+        "Title" : "L7: JavaScript",
+        "Description" : "This lecture focused on the basics of JavaScript and reviewing concepts covered in Intro to ITWS."
+      },
+      {
+        "Title" : "L8: AJAX and JSON",
+        "Description" : "The lecture covered a review of AJAX and JSON. It went over the important aspects that allow working with JSON files and using AJAX to call into that. It also set up the lecture on APIs."
+      },
+      {
+        "Title" : "L9: APIs",
+        "Description" : "This lecture went over APIs - calling them, reading data from the response, getting the headers, and general information and practices for utilizing APIs in web applications."
+      },
+      {
+        "Title" : "L10: Front End Optimizations",
+        "Description" : "The lecture introduced the ideas of front end optimization to maximize user engagement with the side and keep the loading time to as small an amount of time as possible."
+      },
+      {
+        "Title" : "L11: More On PHP",
+        "Description" : "This lecture went more in-depth on PHP, covering PHP functions, objects, and classes to prepare students for Lab 6."
+      },
+      {
+        "Title" : "L12: MySQL and PHP",
+        "Description" : "The lecture focused on database access and security, as well as the way websites can be made to interact with databases and use the data stored within."
+      },
+      {
+        "Title" : "L13: PHP Abstract Classes and Polymorphism",
+        "Description" : "This lecture covered the ideas of object-oriented programming in PHP, including classes, interfaces, polymorphism, and similar concepts."
+      },
+      {
+        "Title" : "L14: Authentication and Authorization",
+        "Description" : "This lecture provided a comprehensive definition of Authentication and Authorization, as well as going into ways to protect data and websites and to ensure that only authorized users have access."
+      }
+    ],
+    "Labs" : [
+      {
+        "Title" : "Lab 1: HTML/CSS Review",
+        "Description" : "Lab 1 was a review of HTML and CSS skills to get back into the mode of creating web pages."
+      },
+      {
+        "Title" : "Lab 2: Constitution Web App",
+        "Description" : "Lab 2, created for Constitution Day, involved putting the Constitution into a web app and creating analysis for various sections."
+      },
+      {
+        "Title" : "Lab 3: APIs",
+        "Description" : "Lab 3 focused on calling multiple APIs and integrating the data received from them into a functional web page."
+      },
+      {
+        "Title" : "Lab 4: AI Lab 3",
+        "Description" : "Lab 4 had the same prompt as Lab 3, but with the caveat that all code must be written by AI. The idea was to get an idea of how to use AI and what its limitations are."
+      },
+      {
+        "Title" : "Lab 5: Bloomberg Data",
+        "Description" : "Lab 5 was a lab in 2 parts. The first involved working with the Bloomberg Terminals and writing a response. The second part was about how Bloomberg data could be integrated into the final projects."
+      },
+      {
+        "Title" : "Lab 6: PHP Classes",
+        "Description" : "Lab 6 focused on utilizing classes and abstract methods in PHP as well as $_POST in order to create a basic calculator application with buttons."
+      },
+      {
+        "Title" : "Lab 7: Web Systems Site",
+        "Description" : "Lab 7 revolved around creating a page that contained information about every Web Systems lecture and lab up to that point in the semester."
+      }
+    ]
+  }
+}

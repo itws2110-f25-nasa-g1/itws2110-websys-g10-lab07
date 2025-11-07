@@ -1,0 +1,36 @@
+{
+  "drawing_course" : {
+    "Lectures" : [
+      {
+        "Title" : "L1: Intro to Basic Drawing",
+        "Description" : "The lecture covered the basics of what drawing means."
+      },
+      {
+        "Title" : "L2: Proper Pencil-Sharpening",
+        "Description" : "This lecture focused on the proper method of hand-sharpening pencils for drawing."
+      },
+      {
+        "Title" : "L3: How To Draw Tree",
+        "Description" : "The lecture covered how to draw a basic tree with all of its leaves gone."
+      },
+      {
+        "Title" : "L4: Pumpkin Drawing",
+        "Description" : "The lecture went over interesting ways to draw spooky looking pumpkins"
+      },
+      {
+        "Title" : "L5: Halloween Scenes",
+        "Description" : "This lecture used aspects of previous lectures to prepare students for the Draw Halloween lab."
+      }
+    ],
+    "Labs" : [
+      {
+        "Title" : "Lab 1: Draw A Person",
+        "Description" : "Lab 1 was a general assignment designed to get students drawing. Stick figures were accepted."
+      },
+      {
+        "Title" : "Lab 2: Draw Halloween",
+        "Description" : "Lab 2 involved students drawing what they thought represented the spookiness of Halloween."
+      }
+    ]
+  }
+}
