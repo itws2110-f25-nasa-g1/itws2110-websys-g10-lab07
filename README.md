@@ -30,6 +30,7 @@ WebSys Section 2 Group 10 Lab 7
     inner join grades on s.RIN = grades.RIN
     where grades.grade > 90;
     ```
+  - The `distinct` specifier removes duplicates from the output
 - 9:
   - `select crn, AVG(grade) from grades group by crn;`
 - 10:
