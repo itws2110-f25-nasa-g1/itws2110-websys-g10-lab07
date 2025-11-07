@@ -72,11 +72,11 @@ nav {
     border: 2px solid black;
 }
 
-.nav-list {
+#nav-list {
     list-style: none;
 }
 
-.nav-list li {
+#nav-list li {
     padding-left: 1em;
 }
 
