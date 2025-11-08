@@ -39,14 +39,27 @@
 								<?php
 									$str = file_get_contents("./resources/jsons/websys_content.json");
 									$json = json_decode($str, true);
+									//lecture buttons
 									echo "<form action=\"\" method=\"GET\"><ul>";
 									for ($i = 0; $i < 14; $i++) {
 										echo "<li><button type=\"submit\" name=\"";
-										echo "lecture_num";				//submit button's GET variable
+										echo "lecture_num";			//submit button's GET variable
+										echo "\" value=\"";
+										echo $i;								//value of that GET variable
+										echo "\">";
+										echo $json['Websys_course']['Lectures'][$i]['Title'];		//text within button
+										echo "</button></li>";
+									}
+									echo "</ul></form>";
+									//lab buttons
+									echo "<form action=\"\" method=\"GET\"><ul>";
+									for ($i = 0; $i < 7; $i++) {
+										echo "<li><button type=\"submit\" name=\"";
+										echo "lab_num";			//submit button's GET variable
 										echo "\" value=\"";
 										echo $i;						//value of that GET variable
 										echo "\">";
-										echo $json['Websys_course']['Lectures'][$i]['Title'];		//text within button
+										echo $json['Websys_course']['Labs'][$i]['Title'];		//text within button
 										echo "</button></li>";
 									}
 									echo "</ul></form>";
@@ -62,17 +75,36 @@
 									}
 									//print out the data of the nth lecture, where n is the value of "lecture_num"
 									elseif($_SERVER['REQUEST_METHOD'] == 'GET') {
-										echo "<h1>";
-										echo $json['Websys_course']['Lectures'][$_GET["lecture_num"]]['Title'];
-										echo "</h1><p>";
-										echo $json['Websys_course']['Lectures'][$_GET["lecture_num"]]['Description'];
-										echo "</p>";
-										//archive button
-										echo "<form action=\"\" method=\"POST\">";
-										echo "<button type=\"submit\" name=\"archive\" value=\"";
-										echo $_GET["lecture_num"];
-										echo "\">Archive</button>";
-										echo "</form>";
+										//display lecture data if we clicked on a lecture button
+										if(isset($_GET['lecture_num'])) {
+											echo "<h1>";
+											echo $json['Websys_course']['Lectures'][$_GET["lecture_num"]]['Title'];
+											echo "</h1><p>";
+											echo $json['Websys_course']['Lectures'][$_GET["lecture_num"]]['Description'];
+											echo "</p>";
+
+											//archive button
+											echo "<form action=\"\" method=\"POST\">";
+											echo "<button type=\"submit\" name=\"archive_lecture\" value=\"";
+											echo $_GET["lecture_num"];
+											echo "\">Archive Lecture</button>";
+											echo "</form>";
+										}
+										//display lab data if we clicked on a lab button
+										elseif(isset($_GET['lab_num'])) {
+											echo "<h1>";
+											echo $json['Websys_course']['Labs'][$_GET["lab_num"]]['Title'];
+											echo "</h1><p>";
+											echo $json['Websys_course']['Labs'][$_GET["lab_num"]]['Description'];
+											echo "</p>";
+
+											//archive button
+											echo "<form action=\"\" method=\"POST\">";
+											echo "<button type=\"submit\" name=\"archive_lab\" value=\"";
+											echo $_GET["lab_num"];
+											echo "\">Archive Lab</button>";
+											echo "</form>";
+										}
 									} else {
 										echo "please select a lab or lecture to display";
 									}
