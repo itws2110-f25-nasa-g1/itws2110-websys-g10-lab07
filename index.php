@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Group 10 Lab 6</title>
+    <title>Group 10 Lab 7</title>
     <link rel="stylesheet" type="text/css" href="resources/style.css">
     <link rel="icon" type="image/x-icon" href="resources/images/favicon.png">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -18,14 +18,12 @@
         <div id="header">
             <div class="header_container">
                 <div id="header_left">
-                    <a href="/"><img src="/resources/images/JOB.png" alt="cynosure" class="logo-img"></a>
-                    <p class="brand-link">Not LMS</p>
+                    <img src="/resources/images/JOB.png" alt="cynosure" class="logo-img">
+                    <a href="/index.php" class="brand-link">Not LMS</a>
                 </div>
-                <ul class="nav-list">
-                    <li>
-                        <button id="reload-button-object">Reload</button>
-                    </li>
-                </ul>
+                <div class="top-nav-list">
+                     <button id="reload-button-object">Reload</button>
+					</div>
             </div>
         </div>
     </header>
@@ -35,7 +33,7 @@
             <!-- Navigation bar -->
             <nav>
 							<h2>WebSys Content</h2>
-							<ul id="nav-list">
+							<ul class="nav-list">
 								<?php
 									$str = file_get_contents("./resources/jsons/websys_content.json");
 									$json = json_decode($str, true);

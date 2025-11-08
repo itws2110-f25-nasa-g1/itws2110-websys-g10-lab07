@@ -62,21 +62,6 @@
     margin-left: 20px;
 }
 
-container-container {
-    display: block;
-    height: 100%;
-}
-
-flex-container {
-    display: flex;
-    align-items: baseline;
-}
-
-#nav-list {
-    list-style: none;
-    padding-left: 1em;
-}
-
 #reload-button-object {
     color: var(--secondary-text);
     text-decoration: none;
@@ -101,7 +86,7 @@ container-container {
 
 flex-container {
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
 }
 
 nav {
@@ -110,6 +95,15 @@ nav {
     padding: 1em;
     color: var(--primary-text);
     background: var(--sidebar-background-color);
+}
+
+.nav-list {
+    list-style: none;
+    padding-left: 1em;  
+}
+
+.nav-list ul li::marker {
+    content: "🕸️";
 }
 
 h2 {
