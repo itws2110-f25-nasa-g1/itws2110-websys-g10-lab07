@@ -70,6 +70,11 @@
                 <?php
 									if($_SERVER['REQUEST_METHOD'] == "POST") {
 										//archiving logic
+										echo "<script>
+										if ( window.history.replaceState ) {
+											window.history.replaceState( null, null, window.location.href );
+										}
+										</script>";
 									}
 									//print out the data of the nth lecture, where n is the value of "lecture_num"
 									elseif($_SERVER['REQUEST_METHOD'] == 'GET') {
