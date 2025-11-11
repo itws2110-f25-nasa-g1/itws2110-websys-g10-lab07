@@ -22,6 +22,10 @@
     font-size: 1.25rem;
 }
 
+body {
+    background-color: black;
+}
+
 #header {
     background: linear-gradient(135deg, var(--purple) 0%, var(--orange) 100%);
     color: var(--secondary-text);
@@ -84,7 +88,6 @@
 
 container-container {
     display: block;
-    height: 100%;
 }
 
 flex-container {
@@ -94,7 +97,6 @@ flex-container {
 
 nav {
     width: fit-content;
-    height: calc(100vh - 65px);
     padding: 1em;
     color: var(--primary-text);
 
@@ -145,7 +147,6 @@ h2 {
 course-content {
     flex: 1;
     padding: 1em;
-    height: calc(100vh - 65px);
     color: var(--primary-text);
     background-image: url('/resources/images/cobweb.png');
     background-size: cover;
