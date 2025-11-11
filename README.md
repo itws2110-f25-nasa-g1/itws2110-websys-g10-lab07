@@ -55,5 +55,6 @@ https://stackoverflow.com/questions/7895335/append-data-to-a-json-file-with-php
 - Dancing Skeleton: https://pin.it/1Zf3SPvrc
 
 # Group member efforts
-Carli - structured and wrote all JSON files, worked on site setup
-Sherlyn - HTML/CSS, spookified the site
+- Carli - structured and wrote all JSON files, worked on site setup
+- Sherlyn - HTML/CSS, spookified the site
+- Keira - Set up basic site wireframe, flex boxes to display course material menu and content pane, prevented form resubmission under certain reload conditions
