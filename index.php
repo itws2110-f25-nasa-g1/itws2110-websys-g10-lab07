@@ -35,9 +35,21 @@
 				<h2>WebSys Content</h2>
 				<ul class="nav-list">
 					<?php
-					//TO DO: MOVE JSON TO DB AND RETRIEVE FROM THERE
 					$str = file_get_contents("./resources/jsons/websys_content.json");
 					$json = json_decode($str, true);
+					
+					if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+						//archiving logic
+						if (isset($_POST['archive_lecture'])) {
+							$json['Websys_course']['Lectures'][$_POST["archive_lecture"]]['Archived'] = true;
+						} 
+						elseif (isset($_POST['archive_lab'])) {
+							$json['Websys_course']['Labs'][$_POST["archive_lab"]]['Archived'] = true;
+						}
+						$jsonData = json_encode($json);
+						file_put_contents('./resources/jsons/websys_content.json', $jsonData);
+					}
+
 
 					//lecture buttons
 					echo "<form action=\"\" method=\"GET\"><ul>";
@@ -77,22 +89,15 @@
 			<course-content>
 				<?php
 				if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-					//archiving logic
-					//TO DO: USE JSON_MODIFY TO SET ARCHIVED = TRUE FOR THIS CONTENT
-					//OR ALTER $json OBJECT AND THEN RESET THE JSON WITHIN THE DB? WHICHEVER IS EASIER
-
+					//empty state caused by archiving
 					echo "\"";
 					if (isset($_POST['archive_lecture'])) {
 						echo $json['Websys_course']['Lectures'][$_POST["archive_lecture"]]['Title'];
-					} elseif (isset($_POST['archive_lab'])) {
-						echo $json['Websys_course']['Lectures'][$_POST["archive_lab"]]['Title'];
+					} 
+					elseif (isset($_POST['archive_lab'])) {
+						echo $json['Websys_course']['Labs'][$_POST["archive_lab"]]['Title'];
 					}
-					echo "\" has been successfully archived.";
-					// echo "<script>
-					// if ( window.history.replaceState ) {
-					// 	window.history.replaceState( null, null, window.location.href );
-					// }
-					// </script>";
+					echo "\" has been successfully archived.";	
 				}
 				//print out the data of the nth lecture, where n is the value of "lecture_num"
 				elseif ($_SERVER['REQUEST_METHOD'] == 'GET') {

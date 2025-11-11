@@ -1,6 +1,11 @@
 # itws2110-websys-g10-lab07
 WebSys Section 2 Group 10 Lab 7
 
+Part 5 Sources:
+
+Editing a JSON file in PHP:
+  https://stackoverflow.com/questions/7895335/append-data-to-a-json-file-with-php
+
 # Steps to install database
 1. Locate `lab7.sql`
 2. Open the SQL client
