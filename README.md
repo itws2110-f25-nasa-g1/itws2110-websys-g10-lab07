@@ -36,6 +36,12 @@ WebSys Section 2 Group 10 Lab 7
 - 10:
   - `select crn, count(*) from grades group by crn;`
 
+ # Sources
+ ### SQL
+ - https://stackoverflow.com/questions/11641270/mysql-select-all-columns-where-one-column-is-distinct
+ - https://stackoverflow.com/questions/5446778/select-from-one-table-matching-criteria-in-another
+ - https://stackoverflow.com/questions/37615586/how-to-create-a-foreign-key-in-phpmyadmin
+
 # Credits
 Blackboard/LMS: blackboard_logo_white.png and favicon.png
 
