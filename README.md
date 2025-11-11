@@ -58,4 +58,5 @@ https://stackoverflow.com/questions/7895335/append-data-to-a-json-file-with-php
 - Carli - structured and wrote all JSON files, worked on site setup
 - Sherlyn - HTML/CSS, spookified the site
 - Keira - Set up basic site wireframe, flex boxes to display course material menu and content pane, prevented form resubmission under certain reload conditions
+- Nick - Worked on adding archiving feature to PHP and JSON structure, fixed the reloading feature, 
 - Jacob - Created the database, tables, and all columns within. Created and associated the various foreign keys to be used to add links from one table to another. Exported the database and uploaded it to the repository. Added the answers to the SQL lookup questions in the README.md file
