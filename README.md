@@ -46,6 +46,8 @@ Editing a JSON file in PHP:
  - https://stackoverflow.com/questions/11641270/mysql-select-all-columns-where-one-column-is-distinct
  - https://stackoverflow.com/questions/5446778/select-from-one-table-matching-criteria-in-another
  - https://stackoverflow.com/questions/37615586/how-to-create-a-foreign-key-in-phpmyadmin
+### Flexboxes
+- https://www.w3schools.com/css/css3_flexbox_container.asp
 
 # Credits
 Blackboard/LMS: blackboard_logo_white.png and favicon.png
