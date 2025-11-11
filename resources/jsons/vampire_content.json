@@ -3,34 +3,41 @@
     "Lectures" : [
       {
         "Title" : "L1: Character Creation",
-        "Description" : "The lecture introduced the course and created the vampire characters."
+        "Description" : "The lecture introduced the course and created the vampire characters.",
+        "Archived" : false
       },
       {
         "Title" : "L2: Halloween",
-        "Description" : "This lecture told the story of Halloween from the characters point of view."
+        "Description" : "This lecture told the story of Halloween from the characters point of view.",
+        "Archived" : false
       },
       {
         "Title" : "L3: Cold War",
-        "Description" : "The players joined the Cold War on the side of the USSR."
+        "Description" : "The players joined the Cold War on the side of the USSR.",
+        "Archived" : false
       },
       {
         "Title" : "L4: Star Wars",
-        "Description" : "The players saw the release of the original Star Wars movie."
+        "Description" : "The players saw the release of the original Star Wars movie.",
+        "Archived" : false
       },
       {
         "Title" : "L5: Less Movies, More TV",
-        "Description" : "The players lamented the advent of Netflix."
-      }
+        "Description" : "The players lamented the advent of Netflix.",
+     
+  "Archived" : false      }
     ],
     "Labs" : [
       {
         "Title" : "Lab 1: Create a backstory",
-        "Description" : "Lab 1 was about creating a backstory for characters."
+        "Description" : "Lab 1 was about creating a backstory for characters.",
+        "Archived" : false
       },
       {
         "Title" : "Lab 2: Watch a Movie",
-        "Description" : "Lab 2 involved students watching a movie at home. Any movie."
-      }
+        "Description" : "Lab 2 involved students watching a movie at home. Any movie.",
+     
+  "Archived" : false      }
     ]
   }
 }

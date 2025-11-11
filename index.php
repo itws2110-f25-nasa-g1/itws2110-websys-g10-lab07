@@ -33,11 +33,16 @@
 							<h2>WebSys Content</h2>
 							<ul class="nav-list">
 								<?php
+									//TO DO: MOVE JSON TO DB AND RETRIEVE FROM THERE
 									$str = file_get_contents("./resources/jsons/websys_content.json");
 									$json = json_decode($str, true);
+
 									//lecture buttons
 									echo "<form action=\"\" method=\"GET\"><ul>";
 									for ($i = 0; $i < 14; $i++) {
+										if($json['Websys_course']['Lectures'][$i]['Archived']) {
+											continue;
+										}
 										echo "<li><button type=\"submit\" name=\"";
 										echo "lecture_num";			//submit button's GET variable
 										echo "\" value=\"";
@@ -50,6 +55,9 @@
 									//lab buttons
 									echo "<form action=\"\" method=\"GET\"><ul>";
 									for ($i = 0; $i < 7; $i++) {
+										if($json['Websys_course']['Labs'][$i]['Archived']) {
+											continue;
+										}
 										echo "<li><button type=\"submit\" name=\"";
 										echo "lab_num";			//submit button's GET variable
 										echo "\" value=\"";
@@ -66,13 +74,24 @@
             <!-- Main content -->
             <course-content>
                 <?php
-									if($_SERVER['REQUEST_METHOD'] == "POST") {
+									if($_SERVER['REQUEST_METHOD'] == 'POST') {
 										//archiving logic
-										echo "<script>
-										if ( window.history.replaceState ) {
-											window.history.replaceState( null, null, window.location.href );
+										//TO DO: USE JSON_MODIFY TO SET ARCHIVED = TRUE FOR THIS CONTENT
+										//OR ALTER $json OBJECT AND THEN RESET THE JSON WITHIN THE DB? WHICHEVER IS EASIER
+
+										echo "\"";
+										if(isset($_POST['archive_lecture'])) {
+											echo $json['Websys_course']['Lectures'][$_POST["archive_lecture"]]['Title'];
 										}
-										</script>";
+										elseif(isset($_POST['archive_lab'])) {
+											echo $json['Websys_course']['Lectures'][$_POST["archive_lab"]]['Title'];
+										}
+										echo "\" has been successfully archived.";
+										// echo "<script>
+										// if ( window.history.replaceState ) {
+										// 	window.history.replaceState( null, null, window.location.href );
+										// }
+										// </script>";
 									}
 									//print out the data of the nth lecture, where n is the value of "lecture_num"
 									elseif($_SERVER['REQUEST_METHOD'] == 'GET') {
@@ -106,8 +125,10 @@
 											echo "\">Archive Lab</button>";
 											echo "</form>";
 										}
-									} else {
-										echo "please select a lab or lecture to display";
+										//empty state
+										else {
+											echo "please select a lab or lecture!";
+										}
 									}
 									// if(isset($_GET["value"])) {
 									// 	echo $_GET["value"];
