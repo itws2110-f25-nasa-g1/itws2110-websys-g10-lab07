@@ -73,10 +73,13 @@
     border: none;
 }
 
-#reload-button-object:hover,
+#reload-button-object:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+    outline: none;
+}
+
 #reload-button-object:focus {
     background-color: rgba(255, 255, 255, 0.5);
-    outline: none;
 }
 
 container-container {

@@ -20,7 +20,9 @@
 					<a href="/index.php" class="brand-link">Not LMS</a>
 				</div>
 				<div class="top-nav-list">
-					<button id="reload-button-object">Reload</button>
+					<form>
+						<button type="submit" id="reload-button-object">Reload</button>
+					</form>
 				</div>
 			</div>
 		</div>
