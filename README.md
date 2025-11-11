@@ -56,3 +56,4 @@ Dancing Skeleton: https://pin.it/1Zf3SPvrc
 
 # Group member efforts
 Carli - structured and wrote all JSON files, worked on site setup
+Sherlyn - HTML/CSS, spookified the site
