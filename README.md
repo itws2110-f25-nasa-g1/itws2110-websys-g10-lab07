@@ -40,3 +40,5 @@ WebSys Section 2 Group 10 Lab 7
 Blackboard/LMS: blackboard_logo_white.png and favicon.png
 
 Cobweb Background: Unsplash
+
+Dancing Skeleton: https://pin.it/1Zf3SPvrc

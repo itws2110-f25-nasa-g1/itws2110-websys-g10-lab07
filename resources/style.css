@@ -25,7 +25,7 @@
 #header {
     background: linear-gradient(135deg, var(--purple) 0%, var(--orange) 100%);
     color: var(--secondary-text);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     z-index: 100;
 }
 
@@ -103,7 +103,7 @@ nav {
     background-size: cover;
     animation-iteration-count: infinite;
 
-    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .nav-list {
