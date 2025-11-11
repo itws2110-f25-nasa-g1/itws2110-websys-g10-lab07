@@ -53,3 +53,6 @@ Blackboard/LMS: blackboard_logo_white.png and favicon.png
 Cobweb Background: Unsplash
 
 Dancing Skeleton: https://pin.it/1Zf3SPvrc
+
+# Group member efforts
+Carli - structured and wrote all JSON files, worked on site setup
