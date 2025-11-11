@@ -4,7 +4,7 @@
     --header-teal: #1ED0C7;
     --purple: #3908e8;
     --orange: #bc6700;
-    --sidebar-background-color: #151515;
+    --sidebar-background-color: #000000;
     --background-color: #252525;
 }
 
@@ -25,7 +25,7 @@
 #header {
     background: linear-gradient(135deg, var(--purple) 0%, var(--orange) 100%);
     color: var(--secondary-text);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
     z-index: 100;
 }
 
@@ -97,7 +97,13 @@ nav {
     height: calc(100vh - 65px);
     padding: 1em;
     color: var(--primary-text);
+
     background: var(--sidebar-background-color);
+    background-image: url('/resources/images/skeleton_dance.gif');
+    background-size: cover;
+    animation-iteration-count: infinite;
+
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .nav-list {
