@@ -1,11 +1,6 @@
 # itws2110-websys-g10-lab07
 WebSys Section 2 Group 10 Lab 7
 
-Part 5 Sources:
-
-Editing a JSON file in PHP:
-  https://stackoverflow.com/questions/7895335/append-data-to-a-json-file-with-php
-
 # Steps to install database
 1. Locate `lab7.sql`
 2. Open the SQL client
@@ -41,20 +36,23 @@ Editing a JSON file in PHP:
 - 10:
   - `select crn, count(*) from grades group by crn;`
 
- # Sources
- ### SQL
- - https://stackoverflow.com/questions/11641270/mysql-select-all-columns-where-one-column-is-distinct
- - https://stackoverflow.com/questions/5446778/select-from-one-table-matching-criteria-in-another
- - https://stackoverflow.com/questions/37615586/how-to-create-a-foreign-key-in-phpmyadmin
+# Sources
+### JSON
+Editing a JSON file in PHP:
+https://stackoverflow.com/questions/7895335/append-data-to-a-json-file-with-php
+
+### SQL
+- https://stackoverflow.com/questions/11641270/mysql-select-all-columns-where-one-column-is-distinct
+- https://stackoverflow.com/questions/5446778/select-from-one-table-matching-criteria-in-another
+- https://stackoverflow.com/questions/37615586/how-to-create-a-foreign-key-in-phpmyadmin
+
 ### Flexboxes
 - https://www.w3schools.com/css/css3_flexbox_container.asp
 
-# Credits
-Blackboard/LMS: blackboard_logo_white.png and favicon.png
-
-Cobweb Background: Unsplash
-
-Dancing Skeleton: https://pin.it/1Zf3SPvrc
+### CSS
+- Blackboard/LMS: blackboard_logo_white.png and favicon.png
+- Cobweb Background: Unsplash
+- Dancing Skeleton: https://pin.it/1Zf3SPvrc
 
 # Group member efforts
 Carli - structured and wrote all JSON files, worked on site setup
